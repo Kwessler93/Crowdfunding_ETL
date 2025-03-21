@@ -21,7 +21,7 @@ CREATE TABLE contacts (
 
 select * from subcategory;
 
-CREATE TABLE campaigns (
+CREATE TABLE campaign (
     cf_id INT PRIMARY KEY,
     contact_id INT,
     company_name VARCHAR(255),
@@ -41,4 +41,4 @@ CREATE TABLE campaigns (
     FOREIGN KEY (subcategory_id) REFERENCES subcategory(subcategory_id)
 );
 
-select * from campaigns;
+select * from campaign;
