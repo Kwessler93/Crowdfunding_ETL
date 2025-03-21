@@ -16,7 +16,7 @@ CREATE TABLE contacts (
     contact_id INTEGER PRIMARY KEY,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
-    email VARCHAR(100),
+    email VARCHAR(100)
 );
 
 select * from subcategory;
@@ -32,8 +32,8 @@ CREATE TABLE campaigns (
     backers_count INT,
     country VARCHAR(10),
     currency VARCHAR(10),
-    launch_date DATETIME,
-    end_date DATETIME,
+    launch_date TIMESTAMP,
+    end_date TIMESTAMP,
     category_id VARCHAR(50),
     subcategory_id VARCHAR(50),
     FOREIGN KEY (contact_id) REFERENCES contacts(contact_id),
